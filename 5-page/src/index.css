@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #232f3e; /* Amazon dark blue */
+  --secondary-color: #febd69; /* Amazon yellow */
+  --accent-color: #ff9900; /* Amazon orange */
+  --background-light: #f3f3f3;
+  --text-dark: #0f1111;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Navbar overrides */
+.bg-amazon {
+  background-color: var(--primary-color) !important;
+}
+.text-amazon-yellow {
+  color: var(--secondary-color) !important;
+}
+.btn-amazon {
+  background-color: var(--secondary-color);
+  color: #111;
+  border-color: var(--secondary-color);
+  font-weight: 500;
+  border-radius: 6px;
+}
+.btn-amazon:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Card overrides */
+.product-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.product-image-container {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+}
+.product-image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* General Layout */
+.main-content {
+  min-height: calc(100vh - 140px); /* Adjust based on navbar and footer height */
+}
+
+/* Buttons and Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: var(--accent-color);
+}
