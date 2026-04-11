@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "title": "Nature",
+      "content": "Nature is Beautiful\n",
+      "image": "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-nature-scenery-free-image.jpeg?w=2210&quality=70",
+      "id": "CcdKvf7kKQ8"
+    },
+    {
+      "title": "How to Start a Business Without Technical Skills",
+      "content": "Business Ideas",
+      "image": "https://media.istockphoto.com/id/1491196684/photo/business-people-celebrating-success-in-an-office.jpg?s=612x612&w=0&k=20&c=zQ5Ps5nQWi3S2futnwyOoqLMFxPzE8B04WltyPB6RyI=",
+      "id": "JHAKWZ9IRgo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
