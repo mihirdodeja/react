@@ -1,0 +1,107 @@
+.theme-dark {
+  background: #050505;
+  color: #f2f2f2;
+}
+
+.theme-light {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.02em;
+}
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border-radius: 1rem;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.product-card img {
+  transition: transform 0.4s ease;
+  filter: brightness(0.95);
+  height: 450px;
+}
+
+.product-card:hover img {
+  transform: scale(1.07);
+  filter: brightness(1);
+}
+
+.btn-unique {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  color: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.theme-light .btn-unique {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.025));
+  color: #212529;
+}
+
+.btn-unique::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.theme-light .btn-unique::before {
+  background: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.14), transparent 60%);
+}
+
+.btn-unique:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.07));
+}
+
+.theme-light .btn-unique:hover {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.04));
+}
+
+.btn-unique:hover::before {
+  opacity: 1;
+}
+
+.page-link {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.page-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.pagination-dark .page-item.active .page-link {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
