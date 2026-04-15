@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #fafafa;
+  --text-color: #0f172a;
+  --primary-color: #2563eb; 
+  --primary-glow: rgba(37, 99, 235, 0.4);
+  --secondary-color: #64748b;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --nav-bg: rgba(255, 255, 255, 0.7);
+  --footer-bg: #f1f5f9;
+}
+
+.dark {
+  --bg-color: #050505;
+  --text-color: #f8fafc;
+  --primary-color: #3b82f6; 
+  --primary-glow: rgba(59, 130, 246, 0.4);
+  --secondary-color: #94a3b8;
+  --card-bg: #0a0a0c;
+  --card-border: #262626;
+  --nav-bg: rgba(5, 5, 5, 0.7);
+  --footer-bg: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism Effect */
+.glass {
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--card-border);
+}
+
+/* Text Gradients */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-color), #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Outfit', sans-serif;
+}

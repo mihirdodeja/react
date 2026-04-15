@@ -1,0 +1,46 @@
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-card {
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.education-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.education-card h4 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.edu-year {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.edu-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+}
